@@ -31,6 +31,7 @@ class Secret implements Encryptable{
             encryptString+=nChar;
         }
         message = encryptString;
+        encrypted = true;
     }
     public void decrypt(){
         String encryptString = "";
@@ -42,6 +43,7 @@ class Secret implements Encryptable{
             encryptString += nChar;
         }
         message = encryptString;
+        encrypted = false;
     }
 
     public void setMessage(String newMessage){
